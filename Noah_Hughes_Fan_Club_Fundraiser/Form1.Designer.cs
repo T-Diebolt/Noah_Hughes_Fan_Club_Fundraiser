@@ -62,7 +62,6 @@
             this.titleLabel.TabIndex = 0;
             this.titleLabel.Text = "Noah Hughes Fan Club Fundraiser";
             this.titleLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.titleLabel.Click += new System.EventHandler(this.label1_Click);
             // 
             // receiptLabel
             // 
@@ -95,7 +94,6 @@
             this.amateurPhotosLabel.TabIndex = 3;
             this.amateurPhotosLabel.Text = "Amatauer Photos of Noah: $2.49 ea.";
             this.amateurPhotosLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.amateurPhotosLabel.Click += new System.EventHandler(this.amateurPhotosLabel_Click);
             // 
             // label1
             // 
@@ -243,9 +241,9 @@
             // 
             this.receiptOutput.BackColor = System.Drawing.Color.White;
             this.receiptOutput.Font = new System.Drawing.Font("Bell MT", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.receiptOutput.Location = new System.Drawing.Point(707, 94);
+            this.receiptOutput.Location = new System.Drawing.Point(696, 94);
             this.receiptOutput.Name = "receiptOutput";
-            this.receiptOutput.Size = new System.Drawing.Size(73, 418);
+            this.receiptOutput.Size = new System.Drawing.Size(84, 418);
             this.receiptOutput.TabIndex = 17;
             this.receiptOutput.TextAlign = System.Drawing.ContentAlignment.TopRight;
             this.receiptOutput.Visible = false;

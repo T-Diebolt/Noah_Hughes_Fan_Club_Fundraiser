@@ -15,9 +15,9 @@ namespace Noah_Hughes_Fan_Club_Fundraiser
     public partial class form1 : Form
     {
         //esablish variables
-        double amateurPhotosPrice = 2.5;
-        double expertPhotosPrice = 7.5;
-        double sculpturePrice = 20;
+        double amateurPhotosPrice = 2.49;
+        double expertPhotosPrice = 7.49;
+        double sculpturePrice = 19.99;
         int numAmateurPhotos;
         int numExpertPhotos;
         int numSculptures;
@@ -38,16 +38,6 @@ namespace Noah_Hughes_Fan_Club_Fundraiser
         public form1()
         {
             InitializeComponent();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void amateurPhotosLabel_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -113,6 +103,9 @@ namespace Noah_Hughes_Fan_Club_Fundraiser
             receiptOutput.Visible = true;
             receiptLabel.Visible = true;
             receiptTitle.Visible = true;
+            receiptOutput.Text = "";
+            receiptLabel.Text = "";
+            receiptTitle.Text = "";
             receiptSound.Play();
             Refresh();
             Thread.Sleep(500);
@@ -130,7 +123,7 @@ namespace Noah_Hughes_Fan_Club_Fundraiser
             Thread.Sleep(650);
 
             //print receipt line #3
-            receiptLabel.Text += $"\nEexpert Photos X{numExpertPhotos}";
+            receiptLabel.Text += $"\nExpert Photos X{numExpertPhotos}";
             receiptOutput.Text += $"\n{expertPhotos.ToString("C")}";
             Refresh();
             Thread.Sleep(650);
@@ -172,8 +165,37 @@ namespace Noah_Hughes_Fan_Club_Fundraiser
             Thread.Sleep(2250);
 
             //print receipt line #10
-            receiptLabel.Text += $"\n\n               FIND NOAH";
+            receiptLabel.Text += $"\n\n               F";
             Refresh();
+            Thread.Sleep(250);
+
+            receiptLabel.Text += $"I";
+            Refresh();
+            Thread.Sleep(250);
+
+            receiptLabel.Text += $"N";
+            Refresh();
+            Thread.Sleep(250);
+
+            receiptLabel.Text += $"D";
+            Refresh();
+            Thread.Sleep(250);
+
+            receiptLabel.Text += $" N";
+            Refresh();
+            Thread.Sleep(250);
+
+            receiptLabel.Text += $"O";
+            Refresh();
+            Thread.Sleep(250);
+
+            receiptLabel.Text += $"A";
+            Refresh();
+            Thread.Sleep(250);
+
+            receiptLabel.Text += $"H";
+            Refresh();
+            
 
         }
 
